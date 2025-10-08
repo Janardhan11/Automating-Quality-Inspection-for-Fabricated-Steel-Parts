@@ -17,6 +17,7 @@ It combines classification (MobileNetV2) to quickly flag defective sheets and se
      - Customized classification head → Dense layers + Dropout
      - Output → Defect / No Defect label
     * Example Output:
+
       ![Classification result](images/defect.png)
 
 2. Segmentation – U-Net
@@ -31,6 +32,8 @@ It combines classification (MobileNetV2) to quickly flag defective sheets and se
      * Example Output:
        - Original Image → Steel surface with rust/wear
        - Segmentation Mask → Green highlighted defective regions
+
+
          ![Defect Segmentation](images/segment.png)
 
 ## Results
