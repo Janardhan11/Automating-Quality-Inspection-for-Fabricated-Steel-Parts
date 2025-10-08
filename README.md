@@ -11,7 +11,7 @@ It combines classification (MobileNetV2) to quickly flag defective sheets and se
 ## Approach
 1. Classification – ResNet50
    - Model Choice: Tested multiple CNNs; ResNet50 gave best speed vs accuracy balance.
-   - Why ResNet50: Fast, accurate → ideal for real-time inspection.
+   - Why ResNet50: best balance of accuracy + robustness.
    * Pipeline:
      - Input image → ResNet50 backbone
      - Customized classification head → Dense layers + Dropout
@@ -44,6 +44,7 @@ It combines classification (MobileNetV2) to quickly flag defective sheets and se
 | VGG16       | 89%      | Slow            | 138M   |
 | EfficientNetB0 | 91%   | Fast            | 5M     |
 
+➡️ ResNet50 chosen as best balance of accuracy + robustness.
 
 - Classification (ResNet50):
   - Accuracy: ~90%
@@ -64,8 +65,6 @@ It combines classification (MobileNetV2) to quickly flag defective sheets and se
 - Matplotlib (visualization)
 
 ## Applications
-- Automated quality inspection in steel plants
-
-Early defect detection → reduces wastage
-
-Integration with production line cameras for real-time defect monitoring
+- Automated steel quality inspection
+- Reduce manual inspection cost
+- Deployable to GPU workstations in factories
