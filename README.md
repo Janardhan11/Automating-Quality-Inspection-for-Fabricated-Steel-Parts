@@ -57,6 +57,15 @@ It combines classification (MobileNetV2) to quickly flag defective sheets and se
 - Source: Severstal Steel Defect Dataset (Kaggle)
 - Includes steel surface images with annotations (masks) for 4 defect classes.
 
+## 🗂️ Example Code Included  
+This repository is not just a report – it includes **ready-to-run example code** for both classification and segmentation:  
+ 
+- `classification/train_resnet50.py` → Model Classification  
+- `segmentation/train_unet.py` → U-Net for segmentation  
+- `segmentation/dataset.py` → Custom dataset loader  
+
+- "You can use these scripts directly or modify them for your own datasets."
+
 ## Tech Stack
 - Python
 - TensorFlow / Keras
