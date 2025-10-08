@@ -37,6 +37,14 @@ It combines classification (MobileNetV2) to quickly flag defective sheets and se
          ![Defect Segmentation](images/segment.png)
 
 ## Results
+
+| Model       | Accuracy | Inference Speed | Params |
+|-------------|----------|-----------------|--------|
+| ResNet50    | 92%      | Medium          | 25M    |
+| VGG16       | 89%      | Slow            | 138M   |
+| EfficientNetB0 | 91%   | Fast            | 5M     |
+
+
 - Classification (ResNet50):
   - Accuracy: ~90%
   - Fast inference on GPU + edge devices
